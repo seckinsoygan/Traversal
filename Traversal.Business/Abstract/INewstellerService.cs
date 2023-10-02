@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Traversal.Entity.Concrete;
 
 namespace Traversal.Business.Abstract
 {
-    internal interface INewstellerService
-    {
-    }
+	public interface INewstellerService : IGenericService<Newsletter>
+	{
+	}
 }
