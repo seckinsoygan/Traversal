@@ -17,6 +17,9 @@ builder.Services.AddSingleton<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IDestinationDal, EfDestinationDal>();
 builder.Services.AddScoped<IDestinationService, DestinationManager>();
 
+builder.Services.AddScoped<IFeatureDal, EfFeatureDal>();
+builder.Services.AddScoped<IFeatureService, FeatureManager>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
